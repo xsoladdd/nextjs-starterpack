@@ -1,7 +1,7 @@
-// import { ThemeProvider } from "next-themes";
+import { ThemeProvider } from "next-themes";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import "../styles/global.css";
+import "../css/global.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -14,9 +14,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" /> */}
         {/* <link href="/dist/main.css" rel="stylesheet"></link> */}
       </Head>
-      {/* <ThemeProvider attribute="class"> */}
-      <Component {...pageProps} />
-      {/* </ThemeProvider> */}
+      <ThemeProvider attribute="class">
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   );
 }
