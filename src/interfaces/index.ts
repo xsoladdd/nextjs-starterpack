@@ -8,7 +8,3 @@ export type User = {
   id: number;
   name: string;
 };
-
-export type colorVariant = "primary" | "secondary" | "danger" | "warning";
-
-export type sizeVariant = "small" | "medium" | "large";

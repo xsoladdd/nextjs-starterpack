@@ -1,10 +1,8 @@
-import React from "react";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-
 import Switch from "./Switch";
 
 export default {
-  title: "Common UI Component/Switch",
+  title: "Common/Switch",
   component: Switch,
   args: {
     onClick: console.log("hey"),

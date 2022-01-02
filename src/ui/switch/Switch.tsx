@@ -1,13 +1,13 @@
 import React from "react";
 import { Switch as HeadlessSwitch } from "@headlessui/react";
-import { colorVariant, sizeVariant } from "../../interfaces";
+import { colorVariantTypes, sizeVariantTypes } from "../../utils/constants";
 
 interface SwitchProps {
   status: boolean;
   disabled?: boolean;
   onClick: () => void;
-  variant?: colorVariant;
-  size?: sizeVariant;
+  variant?: colorVariantTypes;
+  size?: sizeVariantTypes;
 }
 
 const Switch: React.FC<SwitchProps> = ({
