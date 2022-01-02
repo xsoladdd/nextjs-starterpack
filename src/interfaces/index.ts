@@ -9,4 +9,6 @@ export type User = {
   name: string;
 };
 
-export type Theme = "light" | "dark";
+export type colorVariant = "primary" | "secondary" | "danger" | "warning";
+
+export type sizeVariant = "small" | "medium" | "large";
