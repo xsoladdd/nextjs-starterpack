@@ -76,6 +76,7 @@ const Switch: React.FC<SwitchProps> = ({
         className={`${status ? variantClass : "bg-gray-300"} ${
           disabled ? disabledClass : ``
         }
+        disabled:opacity-75
          relative inline-flex items-center ${
            sizeClass.bodyHeight
          } rounded-full  ${sizeClass.bodyWidth} `}

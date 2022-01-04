@@ -27,4 +27,5 @@ NormalSwitch.args = {
   status: true,
   variant: "primary",
   size: "medium",
+  disabled: false,
 };

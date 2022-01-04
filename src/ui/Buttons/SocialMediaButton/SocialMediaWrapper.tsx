@@ -16,7 +16,7 @@ const SocialMediaWrapper: React.FC<SocialMediaWrapperProps> = ({
   return (
     <>
       <button
-        className={`border-0 focus:outline-none rounded text-white ${className} flex place-items-center gap-2`}
+        className={`border-0 focus:outline-none disabled:opacity-75 rounded py-2 px-3 text-white ${className} flex place-items-center gap-2`}
         {...rest}
       >
         <Icon />

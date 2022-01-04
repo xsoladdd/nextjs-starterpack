@@ -27,4 +27,5 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 export const SocialMediaButton = Template.bind({});
 SocialMediaButton.args = {
   label: true,
+  disabled: true,
 };

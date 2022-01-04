@@ -27,7 +27,7 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 export const NormalButton = Template.bind({});
 NormalButton.args = {
   children: "Click me!",
-  // status: true,
+  disabled: true,
   variant: "primary",
   // size: "medium",
 };
