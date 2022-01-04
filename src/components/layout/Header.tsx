@@ -3,9 +3,7 @@ import React from "react";
 import { isDarkmode } from "../../helper/isDarkmode";
 import Switch from "../../ui/Switch/Switch";
 
-interface HeaderProps {}
-
-const Header: React.FC<HeaderProps> = ({}) => {
+const Header: React.FC = ({}) => {
   // const [darkMode, setDarkMode] = useState(true);
 
   const { theme, setTheme } = useTheme();
@@ -19,9 +17,9 @@ const Header: React.FC<HeaderProps> = ({}) => {
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               className="w-10 h-10 text-white p-2 bg-blue-500 rounded-full"
               viewBox="0 0 24 24"
             >
