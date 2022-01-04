@@ -1,7 +1,8 @@
 import React from "react";
 import { colorVariantTypes, sizeVariantTypes } from "../../../utils/constants";
 
-interface ButtonProps extends Omit<React.HTMLProps<HTMLButtonElement>, "size"> {
+interface ButtonProps
+  extends Omit<React.HTMLProps<HTMLButtonElement>, "size" | "type"> {
   onClick: () => void;
   variant?: colorVariantTypes;
   size?: sizeVariantTypes;
@@ -13,7 +14,6 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
   variant,
   size,
-  type,
   ...rest
 }) => {
   let colorClass = ``;
